@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,10 +11,38 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  
+  <!-- SITE-HEADER -->
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a class="site-header__logo logo" href="index.html">
+        <img class="logo__img" src="img/logo-dark.svg" alt="Portfolio logo" width="61" height="32">
+      </a>
+
+      <!-- SITENAV -->
+      <nav class="site-header__sitenav sitenav sitenav--site-header">
+        <ul class="sitenav__list">
+          <li class="sitenav__item sitenav__item--active">
+            <a href="#" class="sitenav__link">Home</a>
+          </li>
+          <li class="sitenav__item">
+            <a href="#" class="sitenav__link">Portfolio</a>
+          </li>
+          <li class="sitenav__item">
+            <a href="#" class="sitenav__link">Contact me</a>
+          </li>
+        </ul>
+      </nav>
+
+
+      <!-- TOGGLER -->
+      <button class="site-header__toggler" type="button" aria-label="Menu"></button>
+    </div>
+  </header>
 
   <script src="js/main.js"></script>
 </body>
+
 </html>
