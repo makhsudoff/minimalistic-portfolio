@@ -206,6 +206,35 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
+/* BUTTON */
+.button   {
+  display: inline-block;
+  padding: 16px 32px;
+  font-size: 12px;
+  line-height: normal;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--grey-blue);
+  color: var(--grey-blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--grey-blue);
+  color: #fff;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 /* SITE-HEADER */
 .site-header {
   position: relative;
