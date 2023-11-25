@@ -44,15 +44,34 @@
 
   <!-- MAIN-CONTENT -->
   <main class="main-content">
-    <div class="container">
-      <button class="cta-button" type="button">
-        <span class="cta-button__inner">
-          <span class="cta-button__append">
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none"><path fill="#000" d="M0 0h48v48H0z" opacity=".1"/><path stroke="currentColor" d="m16 26 8 4 8-4"/><path stroke="currentColor" d="m16 22 8 4 8-4" opacity=".5"/><path stroke="currentColor" d="m16 18 8 4 8-4" opacity=".25"/></svg>
-          </span>
-          <span class="cta-button__text">About me</span>
-        </span>
-      </button>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero__contanier container">
+        <picture class="hero__picture">
+          <source srcset="img/hero-img__big.jpg" media="(min-width: 1024px)">
+          <source srcset="img/hero-img__tablet.jpg" media="(min-width: 500px)">
+          <img class="hero__img" src="img/hero__img.jpg" alt="" width="311" height="271">
+        </picture>
+
+        <div class="hero__text-wrapper">
+          <h1 class="hero__heading">Hey, I'm Alex Spencer and I love building beautiful websites</h1>
+
+          <a class="cta-button" href="#">
+            <span class="cta-button__inner">
+              <span class="cta-button__append">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none">
+                  <path fill="#000" d="M0 0h48v48H0z" opacity=".1" />
+                  <path stroke="currentColor" d="m16 26 8 4 8-4" />
+                  <path stroke="currentColor" d="m16 22 8 4 8-4" opacity=".5" />
+                  <path stroke="currentColor" d="m16 18 8 4 8-4" opacity=".25" />
+                </svg>
+              </span>
+              <span class="cta-button__text">About me</span>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
   </main>
 
