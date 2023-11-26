@@ -385,6 +385,22 @@ select:-webkit-autofill:focus {
   font-family: var(--accent-font-family);
 }
 
+/* PROJECT HERO */
+.project-hero {
+  margin-bottom: 40px;
+}
+.container {
+}
+.project-hero__picture {
+  display: block;
+}
+.project-hero__img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
 
 /* SITE-FOOTER */
 .site-footer {
@@ -437,6 +453,14 @@ only screen and (min-device-pixel-ratio: 2),
 only screen and (min-resolution: 192dpi),
 only screen and (min-resolution: 2dppx) {}
 
+
+
+@media only screen and (min-width: 400px) {
+  .project-hero__img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
 
 @media only screen and (min-width: 500px) {
   .hero__img {
