@@ -424,6 +424,10 @@ select:-webkit-autofill:focus {
 
 
 /* PROJECT META */
+.project-meta-details {
+  margin-bottom: 64px;
+}
+
 .project-meta-details__meta {
   margin-bottom: 48px;
 }
@@ -495,6 +499,64 @@ select:-webkit-autofill:focus {
 .static-previews__img {
   display: block;
   width: 100%;
+}
+
+/* PAGE CONTROLS */
+.page-controls__inner {
+  display: flex;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.page-controls__inner::before {
+  content: "";
+  width: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+}
+
+.page-controls__link {
+  display: grid;
+  text-decoration: none;
+  color: var(--grey-blue);
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.page-controls__link:hover {
+  color: var(--green);
+}
+
+.page-controls__link:active {
+  opacity: 0.6;
+}
+
+.page-controls__link--prev {
+  order: -1;
+  padding-left: 0;
+}
+
+.page-controls__link--next {
+  padding-right: 0;
+  justify-items: end;
+}
+.page-controls__icon {
+  width: 8px;
+  height: 16px;
+  margin-bottom: 16px;
+}
+.page-controls__text {
+  order: 1;
+  color: #33323D;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.5;
+}
+.page-controls__title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 26px;
+  font-family: var(--accent-font-family);
+  letter-spacing: -0.286px;
 }
 
 
@@ -759,6 +821,44 @@ only screen and (min-resolution: 2dppx) {}
   .project-meta__tags {
     margin-bottom: 0;
   }
+
+  .project-meta-details {
+    margin-bottom: 80px;
+  }
+
+  .page-controls__link {
+    padding: 32px;
+    gap: 0 32px;
+    grid-template-rows: auto auto;
+    align-items: center;
+  }
+
+  .page-controls__link--prev {
+    grid-template-columns: auto 1fr;
+    padding-left: 0;
+  }
+
+  .page-controls__link--next {
+    padding-right: 0;
+  }
+
+  .page-controls__icon {
+    grid-row: span 2;
+    margin-bottom: 0;
+  }
+
+  .page-controls__link--prev .page-controls__text {
+    grid-column: 2;
+  }
+
+  .page-controls__link--next {
+    grid-template-columns: 1fr auto;
+  }
+
+  .page-controls__link--next .page-controls__icon {
+    grid-column: 2;
+    grid-row: 1 / -1;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -862,5 +962,9 @@ only screen and (min-resolution: 2dppx) {}
 
   .project-section__heading--static-previews {
     margin-bottom: 28px;
+  }
+
+  .project-meta-details {
+    margin-bottom: 64px;
   }
 }
