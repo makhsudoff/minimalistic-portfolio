@@ -550,6 +550,7 @@ select:-webkit-autofill:focus {
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
+  text-transform: capitalize;
 }
 .page-controls__title {
   font-size: 32px;
