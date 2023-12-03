@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:ital,wght@0,100;0,400;0,500;0,700;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;700&family=Public+Sans:ital,wght@0,100;0,400;0,500;0,700;1,700&display=swap");
 
 /* CUSTOM PROPS */
 :root {
@@ -44,7 +44,6 @@ img {
   height: auto;
 }
 
-
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
 input:-webkit-autofill:hover,
@@ -60,7 +59,6 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
 }*/
 
-
 /* PLACEHOLDER-STYLES */
 /*::-webkit-input-placeholder,
 ::-moz-placeholder,
@@ -69,7 +67,6 @@ select:-webkit-autofill:focus {
   color: rgba(52, 49, 61, 0.5);
   opacity: 1;
 }*/
-
 
 /* VISUALLY-HIDDEN */
 .visually-hidden {
@@ -83,7 +80,6 @@ select:-webkit-autofill:focus {
   overflow: hidden;
 }
 
-
 /* CONTAINER */
 .container {
   width: 100%;
@@ -93,7 +89,6 @@ select:-webkit-autofill:focus {
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /* MAIN-CONTENT */
 .main-content {
@@ -124,14 +119,12 @@ select:-webkit-autofill:focus {
   opacity: 0.6;
 }
 
-
 /* SITENAV */
 .sitenav__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 
 .sitenav__item:not(:last-child) {
   margin-bottom: 32px;
@@ -319,7 +312,6 @@ select:-webkit-autofill:focus {
   line-height: 2;
 }
 
-
 .img-text-info-list {
   padding: 0;
   margin: 0;
@@ -444,7 +436,6 @@ select:-webkit-autofill:focus {
   height: 240px;
   object-fit: cover;
 }
-
 
 /* PROJECT META */
 .project-meta-details {
@@ -579,7 +570,7 @@ select:-webkit-autofill:focus {
 
 .page-controls__text {
   order: 1;
-  color: #33323D;
+  color: #33323d;
   font-size: 16px;
   font-weight: 400;
   opacity: 0.5;
@@ -655,6 +646,28 @@ select:-webkit-autofill:focus {
   color: var(--grey-blue);
 }
 
+.form__error-message {
+  display: none;
+  margin-top: 4px;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--red);
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid ~ .form__error-message {
+  display: block;
+}
+
+.form__field:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--green);
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--red);
+}
+
 .form__field-textarea {
   min-height: 96px;
   resize: vertical;
@@ -705,15 +718,13 @@ select:-webkit-autofill:focus {
   margin-bottom: 40px;
 }
 
-
-
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {}
-
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+}
 
 @media only screen and (min-width: 400px) {
   .project-hero__img {
@@ -758,7 +769,6 @@ only screen and (min-resolution: 2dppx) {}
 }
 
 @media only screen and (min-width: 700px) {
-
   .site-footer {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -1015,7 +1025,6 @@ only screen and (min-resolution: 2dppx) {}
     line-height: 1;
   }
 
-
   .img-text-info--index-about .img-text-info__img {
     width: 540px;
     height: 600px;
@@ -1027,7 +1036,8 @@ only screen and (min-resolution: 2dppx) {}
     gap: 64px;
   }
 
-  .two-column-section, .two-column-section:first-child {
+  .two-column-section,
+  .two-column-section:first-child {
     padding-top: 48px;
     padding-bottom: 48px;
   }
@@ -1045,7 +1055,6 @@ only screen and (min-resolution: 2dppx) {}
   .img-text-info {
     align-items: stretch;
   }
-
 
   .img-text-info__img {
     width: 540px;

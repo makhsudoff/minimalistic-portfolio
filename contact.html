@@ -100,15 +100,19 @@
             <form class="form" action="https://echo.htmlacademy.ru" method="post">
               <div class="form__group">
                 <label class="form__label" for="name-input">Name</label>
-                <input class="form__field" type="text" name="name" id="name-input" placeholder="Jane Appleseed" required>
+                <input class="form__field" type="text" name="name" id="name-input" placeholder="Jane Appleseed"
+                  required>
               </div>
               <div class="form__group">
                 <label class="form__label" for="email-input">Email Address</label>
-                <input class="form__field" type="email" name="email" id="email-input" placeholder="email@example.com" required>
+                <input class="form__field" type="email" name="email" id="email-input" placeholder="email@example.com"
+                  required>
+                <div class="form__error-message">Please enter valid email.</div>
               </div>
               <div class="form__group">
                 <label class="form__label" for="message-field">Message</label>
-                <textarea class="form__field form__field-textarea" name="message" id="message-field" placeholder="How can I help?" required></textarea>
+                <textarea class="form__field form__field-textarea" name="message" id="message-field"
+                  placeholder="How can I help?" required></textarea>
               </div>
               <div class="form__group">
                 <button class="solid-button" type="submit">Send message</button>
